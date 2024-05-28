@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2024 at 09:51 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: May 28, 2024 at 11:59 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -45,10 +45,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`UserID`, `Username`, `user_email`, `Pass_word`, `firstname`, `lastname`, `birthday`, `sex`, `user_profile_picture`, `account_type`) VALUES
-(95237, 'Kaelpogi', 'Z@gmail.com', '$2y$10$T.hkaOzdb2vqJzcqEHwo/OIwUdujnvPTvuoOegJWjIxJytWqmd5kO', 'Kayel', 'Latayan', '2003-07-22', 'Female', 'uploads/kayelpic_1716345627.jpg', 1),
-(95238, 'Kayel', 'KateLatayan22@gmail.com', '$2y$10$WMUaKCwzZi8pAWtozwQ33O8iAUIwlADmehVsnq9mhbxSXHtvr6Y6y', 'Kayel', 'pogi', '2004-07-22', 'Male', 'uploads/850ba0ab-bb30-48b9-b26a-5c5adb12c847.jpg', 0),
-(95239, 'eka', 'KateLatayan22@gmail.com', '$2y$10$95RIzL5pB44p8UGlN53gWuttdDZSQsGKsXOD.4h5m8uKAPm72JRUq', 'eka', 'yanto', '2004-06-18', 'Female', 'uploads/download.jpg', 1),
-(95240, 'kael', '', 'Password@01', 'kael', 'libao', '2009-03-22', 'female', '', 0);
+(95242, 'James01', 'jeid@gmail.com', '$2y$10$hFMuM2nHejWTrfprGThQBOdhsZrNcX67mXIKXIzyxZecyRR63wQDi', 'James', 'Licauco', '2002-06-07', 'Male', 'uploads/james.jpg', 0),
+(95244, 'Sunoo', 'Sunoo@gmail.com', '$2y$10$aicUk92DI60Qi.qIbq0ZruTO4gynX5igGdoWhq0eRj4bSikK/h/4q', 'Sunoo', 'Park', '0003-06-23', 'Male', 'uploads/sunoo.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -70,9 +68,8 @@ CREATE TABLE `user_address` (
 --
 
 INSERT INTO `user_address` (`user_add_id`, `UserID`, `user_add_street`, `user_add_barangay`, `user_add_city`, `user_add_province`) VALUES
-(19, 95237, 'Sitio Bauan', 'quilo-quilo south', 'batangas ', 'Padre Garcia '),
-(20, 95238, 'dyanlangtasatabi', 'East Poblacion', 'Rizal', 'Region IV-A (CALABARZON)'),
-(21, 95239, 'sitiokanluran', 'Maugat west', 'Batangas ', 'Batangas ');
+(22, 95242, 'oasjdnd', '', 'Lopez', 'Region IV-A (CALABARZON)'),
+(24, 95244, 'redsnf', 'San Narciso', 'San Manuel', 'Region III (Central Luzon)');
 
 --
 -- Indexes for dumped tables
@@ -99,13 +96,13 @@ ALTER TABLE `user_address`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95241;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95245;
 
 --
 -- AUTO_INCREMENT for table `user_address`
 --
 ALTER TABLE `user_address`
-  MODIFY `user_add_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `user_add_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- Constraints for dumped tables
